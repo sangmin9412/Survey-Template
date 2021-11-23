@@ -1,0 +1,113 @@
+/* PSM SURVEY STYLE */
+body {
+  /* font-family: 'Nanum Gothic', "Roboto", sans-serif; */
+}
+
+#wrapper {
+  background: #f4f4f4;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+#container {}
+
+#content {
+  
+}
+
+.logo .hp-link {
+  margin: 0 auto;
+  display: block;
+  max-width: 210px;
+  height: 117px;
+  background: url("/assets/images/header_logo.png") 0 0 no-repeat;
+  background-size: 100%;
+  font-size: 0;
+  line-height: 0;
+}
+
+.survey-area {
+  max-width: 550px;
+  width: 100%;
+}
+
+.survey-card-area {
+  position: relative;
+}
+
+.survey-card-area .card {
+  width: 100%;
+  border: 1px solid #ddd;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease-in-out;
+  pointer-events: none;
+}
+
+.survey-card-area .card.prev {
+  transform: translateX(-100px);
+}
+
+.survey-card-area .card.current {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  pointer-events: all;
+}
+
+.survey-card-area .card.next {
+  transform: translateX(100px);
+}
+
+.survey-buttons-area {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.survey-buttons-area .survey-prev,
+.survey-buttons-area .survey-next {
+  position: absolute;
+  border: 0;
+  background: none;
+  width: 100px;
+  height: 100px;
+  transition: background .5s;
+}
+.survey-buttons-area .survey-prev {
+  left: 0;
+}
+.survey-buttons-area .survey-next {
+  right: 0;
+}
+.survey-buttons-area .survey-prev:hover,
+.survey-buttons-area .survey-next:hover {
+  background: rgba(204, 204, 204, .5);
+}
+.survey-buttons-area .survey-prev i,
+.survey-buttons-area .survey-next i {
+  font-size: 40px;
+}
+
+.form-label {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+@media all and (max-width: 768px) {
+  .survey-buttons-area {
+    position: fixed;
+  }
+  .survey-buttons-area .survey-prev, 
+  .survey-buttons-area .survey-next {
+    width: 50px;
+    height: 50px;
+  }
+
+  .survey-buttons-area .survey-prev i, 
+  .survey-buttons-area .survey-next i {
+    font-size: 20px;
+  }
+}
