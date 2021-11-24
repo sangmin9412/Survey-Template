@@ -1,18 +1,12 @@
-/* PSM SURVEY STYLE */
-body {
-  /* font-family: 'Nanum Gothic', "Roboto", sans-serif; */
+/* SURVEY STYLE */
+.bg-gray-dark {
+  background-color: var(--mdb-dark);
 }
 
 #wrapper {
   background: #f4f4f4;
   min-height: 100vh;
   overflow: hidden;
-}
-
-#container {}
-
-#content {
-  
 }
 
 .logo .hp-link {
@@ -26,6 +20,9 @@ body {
   line-height: 0;
 }
 
+.survey-container {
+  min-height: 100vh;
+}
 .survey-area {
   max-width: 550px;
   width: 100%;
@@ -93,7 +90,10 @@ body {
 }
 
 .form-label {
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'NanumSquare', sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #2b2b2b;
 }
 
 @media all and (max-width: 768px) {

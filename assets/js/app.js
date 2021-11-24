@@ -42,10 +42,15 @@
     }
   }
 
-  const inputRegex = (val, type) => {
+  const inputRegex = (val, type, length) => {
     switch (type) {
       case "text":
-        return !(val.length === 0 || val.trim() === "");
+        if (val.trim() === "") return false;
+        if (length) {
+          return (val.length >= length);
+        } else {
+          return (val.length !== 0);
+        }
       case "email":
         const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(String(val).toLowerCase());
@@ -122,8 +127,9 @@
       InputHandler: (target) => {
         const value = target.value;
         const dataTypeVal = target.dataset.inputType;
+        const maxLength = target.dataset.inputMaxlength;
         let result;
-        if (inputRegex(value, dataTypeVal)) {
+        if (inputRegex(value, dataTypeVal, maxLength)) {
           target.classList.add("is-valid");
           target.classList.remove("is-invalid");
           result = true;
@@ -264,7 +270,19 @@
           });
         }
 
+        // 출력
         console.log(answers);
+        let alertTxt = "";
+        for (const key in answers) {
+          if (Object.hasOwnProperty.call(answers, key)) {
+            alertTxt += `${Number(key) + 1}번 STEP 결과 \n`;
+            answers[key].forEach(v => {
+              alertTxt += `${v.id}. ${v.question} - ${v.value} \n`;
+            });
+            alertTxt += `-------------------------------\n`;
+          }
+        }
+        alert(alertTxt);
       }
     }
 

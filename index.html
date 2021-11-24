@@ -6,21 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PMS Survey</title>
   <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css" rel="stylesheet">
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
-  <script src="./assets/js/app.js"></script>
+  <script src="assets/js/app.js"></script>
 </head>
 <body>
   <div id="wrapper">
     <div id="container">
-      <main id="content" class="pt-4">
-        <h1 class="logo"><a class="hp-link">THE SMC LOGO</a></h1>
-        <section class="p-4 d-flex justify-content-center w-100">
+      <main id="content">
+        <!-- <h1 class="logo"><a class="hp-link">LOGO</a></h1> -->
+        <section class="survey-container p-4 d-flex align-items-center justify-content-center w-100">
           <div class="survey-area mx-auto" id="survey_1"> 
             <div class="survey-area-inner">
               <div class="progress mb-3" style="height: 20px;">
@@ -32,7 +32,7 @@
 
               <div class="survey-card-area">
                 <div class="card">
-                  <div class="card-header bg-secondary ">
+                  <div class="card-header bg-gray-dark ">
                     <h5 class="card-title text-white mt-2">STEP.01</h5>
                   </div>
                   <div class="modal-body">
@@ -52,17 +52,17 @@
                     <div class="px-4">
                       <div class="form-group mb-3">
                         <label class="form-label" for="custom-validation-input-1">사번</label>
-                        <input type="text" id="custom-validation-input-1" class="form-control" readonly data-input-type="text" data-input-id="1" data-input-question="사번" value="TH201213">
+                        <input type="text" id="custom-validation-input-1" class="form-control" readonly data-input-type="text" data-input-id="1" data-input-question="사번" value="0000000">
                       </div>
 
                       <div class="form-group mb-3">
                         <label class="form-label" for="custom-validation-input-2">소속</label>
-                        <input type="text" id="custom-validation-input-2" class="form-control" readonly data-input-type="text" data-input-id="2" data-input-question="소속" value="더에스엠씨그룹">
+                        <input type="text" id="custom-validation-input-2" class="form-control" readonly data-input-type="text" data-input-id="2" data-input-question="소속" value="새회사">
                       </div>
 
                       <div class="form-group mb-3">
                         <label class="form-label" for="custom-validation-input-3">부서 / 팀</label>
-                        <input type="text" id="custom-validation-input-3" class="form-control" readonly data-input-type="text" data-input-id="3" data-input-question="부서 / 팀" value="R&D">
+                        <input type="text" id="custom-validation-input-3" class="form-control" readonly data-input-type="text" data-input-id="3" data-input-question="부서 / 팀" value="개발팀">
                       </div>
                       
                       <div class="form-group mb-3">
@@ -98,13 +98,13 @@
                   </div>
                   <div class="card-footer text-end">
                     <div class="d-grid">
-                      <button type="button" class="btn btn-secondary" data-input-type="submit">다음</button>
+                      <button type="button" class="btn btn-dark" data-input-type="submit">다음</button>
                     </div>
                   </div>
                 </div>
 
                 <div class="card">
-                  <div class="card-header bg-secondary ">
+                  <div class="card-header bg-gray-dark ">
                     <h5 class="card-title text-white mt-2">STEP.02</h5>
                   </div>
                   <div class="modal-body">
@@ -159,7 +159,7 @@
 
                       <div class="form-group mb-3">
                         <label class="form-label" for="custom-validation-input-6">사용 여부</label>
-                        <input type="text" id="custom-validation-input-6" class="form-control" required="" data-input-id="2" data-input-question="사용 여부" data-input-type="email">
+                        <input type="text" id="custom-validation-input-6" class="form-control" required="" data-input-id="2" data-input-question="사용 여부" data-input-type="email" placeholder="email">
                       </div>
               
                       <!-- <p class="text-center"><strong>What could we improve?</strong></p> -->
@@ -167,12 +167,12 @@
                       <!-- Message input -->
                       <div class="form-group mb-3">
                         <label class="form-label" for="textArea1">사용 용도</label>
-                        <textarea class="form-control" id="textArea1" rows="5" data-input-type="text" data-input-id="3" data-input-question="사용 용도"></textarea>
+                        <textarea class="form-control" id="textArea1" rows="5" data-input-type="text" data-input-id="3" data-input-question="사용 용도" data-input-maxlength="10" placeholder="10자 이상 입력"></textarea>
                       </div>
 
                       <div class="form-group mb-3">
                         <label class="form-label" for="textArea2">개선 사항</label>
-                        <textarea class="form-control" id="textArea2" rows="5" data-input-type="text" data-input-id="4" data-input-question="개선 사항"></textarea>
+                        <textarea class="form-control" id="textArea2" rows="5" data-input-type="text" data-input-id="4" data-input-question="개선 사항" data-input-maxlength="30" placeholder="30자 이상 입력"></textarea>
                       </div>
 
                       <div class="form-gorup mb-3">
@@ -211,13 +211,13 @@
                   </div>
                   <div class="card-footer text-end">
                     <div class="d-grid">
-                      <button type="button" class="btn btn-secondary" data-input-type="submit">다음</button>
+                      <button type="button" class="btn btn-dark" data-input-type="submit">다음</button>
                     </div>
                   </div>
                 </div>
 
                 <div class="card">
-                  <div class="card-header bg-secondary ">
+                  <div class="card-header bg-gray-dark ">
                     <h5 class="card-title text-white mt-2">STEP.03</h5>
                   </div>
                   <div class="modal-body">
@@ -258,13 +258,13 @@
                   </div>
                   <div class="card-footer text-end">
                     <div class="d-grid">
-                      <button type="button" class="btn btn-secondary" data-input-type="submit">다음</button>
+                      <button type="button" class="btn btn-dark" data-input-type="submit">다음</button>
                     </div>
                   </div>
                 </div>
 
                 <div class="card">
-                  <div class="card-header bg-secondary ">
+                  <div class="card-header bg-gray-dark ">
                     <h5 class="card-title text-white mt-2">STEP.04</h5>
                   </div>
                   <div class="modal-body">
@@ -305,7 +305,7 @@
                   </div>
                   <div class="card-footer text-end">
                     <div class="d-grid">
-                      <button type="button" class="btn btn-secondary" data-input-type="submit">보내기</button>
+                      <button type="button" class="btn btn-dark" data-input-type="submit">보내기</button>
                     </div>
                   </div>
                 </div>
