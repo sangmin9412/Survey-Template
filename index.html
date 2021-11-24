@@ -19,8 +19,8 @@
   <div id="wrapper">
     <div id="container">
       <main id="content">
-        <!-- <h1 class="logo"><a class="hp-link">LOGO</a></h1> -->
-        <section class="survey-container p-4 d-flex align-items-center justify-content-center w-100">
+        <section class="survey-container p-4 d-flex flex-column align-items-center justify-content-center w-100">
+          <h1 class="logo mb-5"><a class="hp-link">LOGO</a></h1>
           <div class="survey-area mx-auto" id="survey_1"> 
             <div class="survey-area-inner">
               <div class="progress mb-3" style="height: 20px;">
@@ -52,33 +52,33 @@
                     <div class="px-4">
                       <div class="form-group mb-3">
                         <label class="form-label" for="custom-validation-input-1">사번</label>
-                        <input type="text" id="custom-validation-input-1" class="form-control" readonly data-input-type="text" data-input-id="1" data-input-question="사번" value="0000000">
+                        <input type="text" id="custom-validation-input-1" class="form-control" readonly data-input-type="text" data-input-id="1" data-input-question="사번" value="TH201213">
                       </div>
 
                       <div class="form-group mb-3">
                         <label class="form-label" for="custom-validation-input-2">소속</label>
-                        <input type="text" id="custom-validation-input-2" class="form-control" readonly data-input-type="text" data-input-id="2" data-input-question="소속" value="새회사">
+                        <input type="text" id="custom-validation-input-2" class="form-control" readonly data-input-type="text" data-input-id="2" data-input-question="소속" value="더에스엠씨그룹">
                       </div>
 
                       <div class="form-group mb-3">
                         <label class="form-label" for="custom-validation-input-3">부서 / 팀</label>
-                        <input type="text" id="custom-validation-input-3" class="form-control" readonly data-input-type="text" data-input-id="3" data-input-question="부서 / 팀" value="개발팀">
+                        <input type="text" id="custom-validation-input-3" class="form-control" readonly data-input-type="text" data-input-id="3" data-input-question="부서 / 팀" value="R&D">
                       </div>
                       
                       <div class="form-group mb-3">
-                        <label class="form-label">라디오박스 테스트</label>
+                        <label class="form-label">설문 테스트 4 (라디오)</label>
                         <div class="form-check">
                           <input
                             class="form-check-input"
                             type="radio"
                             name="flexRadioDefault"
-                            value="radio 01"
+                            value="라디오박스 테스트 1"
                             id="flexRadioDefault1"
                             data-input-type="radio" 
                             data-input-id="4" 
-                            data-input-question="라디오박스 테스트"
+                            data-input-question="설문 테스트 4"
                           />
-                          <label class="form-check-label" for="flexRadioDefault1"> Default radio 1 </label>
+                          <label class="form-check-label" for="flexRadioDefault1"> 라디오박스 테스트 1 </label>
                         </div>
                         <div class="form-check">
                           <input
@@ -86,12 +86,12 @@
                             type="radio"
                             name="flexRadioDefault"
                             id="flexRadioDefault2"
-                            value="radio 02"
+                            value="라디오박스 테스트 2"
                             data-input-type="radio" 
                             data-input-id="4" 
-                            data-input-question="라디오박스 테스트"
+                            data-input-question="설문 테스트 4"
                           />
-                          <label class="form-check-label" for="flexRadioDefault2"> Default radio 2 </label>
+                          <label class="form-check-label" for="flexRadioDefault2"> 라디오박스 테스트 2 </label>
                         </div>
                       </div>
                     </div>
@@ -125,19 +125,19 @@
                       <!-- <p class="text-center"><strong>Your rating:</strong></p> -->
 
                       <div class="form-gorup mb-3">
-                        <label class="form-label">체크박스 테스트 2</label>
+                        <label class="form-label">설문 테스트 1 (체크박스)</label>
                         <div class="form-check">
                           <input
                             class="form-check-input"
                             type="checkbox"
-                            value="checkbox 03"
+                            value="체크박스 테스트 1"
                             id="flexCheckChecked3"
                             data-input-type="checkbox" 
                             data-input-id="1" 
-                            data-input-question="체크박스 테스트 2"
+                            data-input-question="설문 테스트 1"
                           />
                           <label class="form-check-label" for="flexCheckChecked3">
-                            Checked checkbox3
+                            체크박스 테스트 1
                           </label>
                         </div>
 
@@ -145,50 +145,50 @@
                           <input
                             class="form-check-input"
                             type="checkbox"
-                            value="checkbox 04"
+                            value="체크박스 테스트 2"
                             id="flexCheckChecked4"
                             data-input-type="checkbox" 
                             data-input-id="1" 
-                            data-input-question="체크박스 테스트 2"
+                            data-input-question="설문 테스트 1"
                           />
                           <label class="form-check-label" for="flexCheckChecked4">
-                            Checked checkbox4
+                            체크박스 테스트 2
                           </label>
                         </div>
                       </div>
 
                       <div class="form-group mb-3">
-                        <label class="form-label" for="custom-validation-input-6">사용 여부</label>
-                        <input type="text" id="custom-validation-input-6" class="form-control" required="" data-input-id="2" data-input-question="사용 여부" data-input-type="email" placeholder="email">
+                        <label class="form-label" for="custom-validation-input-6">설문 테스트 2 (이메일)</label>
+                        <input type="text" id="custom-validation-input-6" class="form-control" required="" data-input-id="2" data-input-question="설문 테스트 2" data-input-type="email" placeholder="email">
                       </div>
               
                       <!-- <p class="text-center"><strong>What could we improve?</strong></p> -->
               
                       <!-- Message input -->
                       <div class="form-group mb-3">
-                        <label class="form-label" for="textArea1">사용 용도</label>
-                        <textarea class="form-control" id="textArea1" rows="5" data-input-type="text" data-input-id="3" data-input-question="사용 용도" data-input-maxlength="10" placeholder="10자 이상 입력"></textarea>
+                        <label class="form-label" for="textArea1">설문 테스트 3 (10자 이상)</label>
+                        <textarea class="form-control" id="textArea1" rows="5" data-input-type="text" data-input-id="3" data-input-question="설문 테스트 3" data-input-maxlength="10" placeholder="10자 이상 입력"></textarea>
                       </div>
 
                       <div class="form-group mb-3">
-                        <label class="form-label" for="textArea2">개선 사항</label>
-                        <textarea class="form-control" id="textArea2" rows="5" data-input-type="text" data-input-id="4" data-input-question="개선 사항" data-input-maxlength="30" placeholder="30자 이상 입력"></textarea>
+                        <label class="form-label" for="textArea2">설문 테스트 4 (30자 이상)</label>
+                        <textarea class="form-control" id="textArea2" rows="5" data-input-type="text" data-input-id="4" data-input-question="설문 테스트 4" data-input-maxlength="30" placeholder="30자 이상 입력"></textarea>
                       </div>
 
                       <div class="form-gorup mb-3">
-                        <label class="form-label">체크박스 테스트</label>
+                        <label class="form-label">설문 테스트 5 (체크박스)</label>
                         <div class="form-check">
                           <input
                             class="form-check-input"
                             type="checkbox"
-                            value="checkbox 01"
+                            value="체크박스 테스트 3"
                             id="flexCheckChecked1"
                             data-input-type="checkbox" 
                             data-input-id="5" 
-                            data-input-question="체크박스 테스트"
+                            data-input-question="설문 테스트 5"
                           />
                           <label class="form-check-label" for="flexCheckChecked1">
-                            Checked checkbox1
+                            체크박스 테스트 3
                           </label>
                         </div>
 
@@ -196,14 +196,14 @@
                           <input
                             class="form-check-input"
                             type="checkbox"
-                            value="checkbox 02"
+                            value="체크박스 테스트 4"
                             id="flexCheckChecked2"
                             data-input-type="checkbox" 
                             data-input-id="5" 
-                            data-input-question="체크박스 테스트"
+                            data-input-question="설문 테스트 5"
                           />
                           <label class="form-check-label" for="flexCheckChecked2">
-                            Checked checkbox2
+                            체크박스 테스트 4
                           </label>
                         </div>
                       </div>
@@ -238,21 +238,21 @@
                       <!-- <p class="text-center"><strong>Your rating:</strong></p> -->
 
                       <div class="form-group mb-3">
-                        <label class="form-label" for="custom-validation-input-61">사용 여부</label>
-                        <input type="text" id="custom-validation-input-61" class="form-control" required="" data-input-id="1" data-input-question="사용 여부" data-input-type="text">
+                        <label class="form-label" for="custom-validation-input-61">설문 테스트 1</label>
+                        <input type="text" id="custom-validation-input-61" class="form-control" required="" data-input-id="1" data-input-question="설문 테스트 1" data-input-type="text">
                       </div>
               
                       <!-- <p class="text-center"><strong>What could we improve?</strong></p> -->
               
                       <!-- Message input -->
                       <div class="form-group mb-3">
-                        <label class="form-label" for="textArea11">사용 용도</label>
-                        <textarea class="form-control" id="textArea11" rows="5" data-input-type="text" data-input-id="2" data-input-question="사용 용도"></textarea>
+                        <label class="form-label" for="textArea11">설문 테스트 2</label>
+                        <textarea class="form-control" id="textArea11" rows="5" data-input-type="text" data-input-id="2" data-input-question="설문 테스트 2"></textarea>
                       </div>
 
                       <div class="form-group mb-3">
-                        <label class="form-label" for="textArea21">개선 사항</label>
-                        <textarea class="form-control" id="textArea21" rows="5" data-input-type="text" data-input-id="3" data-input-question="개선 사항"></textarea>
+                        <label class="form-label" for="textArea21">설문 테스트 3</label>
+                        <textarea class="form-control" id="textArea21" rows="5" data-input-type="text" data-input-id="3" data-input-question="설문 테스트 3"></textarea>
                       </div>
                     </div>
                   </div>
@@ -285,21 +285,21 @@
                       <!-- <p class="text-center"><strong>Your rating:</strong></p> -->
 
                       <div class="form-group mb-3">
-                        <label class="form-label" for="custom-validation-input-62">사용 여부</label>
-                        <input type="text" id="custom-validation-input-62" class="form-control" required="" data-input-id="1" data-input-question="사용 여부" data-input-type="text">
+                        <label class="form-label" for="custom-validation-input-62">설문 테스트 1</label>
+                        <input type="text" id="custom-validation-input-62" class="form-control" required="" data-input-id="1" data-input-question="설문 테스트 1" data-input-type="text">
                       </div>
               
                       <!-- <p class="text-center"><strong>What could we improve?</strong></p> -->
               
                       <!-- Message input -->
                       <div class="form-group mb-3">
-                        <label class="form-label" for="textArea12">사용 용도</label>
-                        <textarea class="form-control" id="textArea12" rows="5" data-input-type="text" data-input-id="2" data-input-question="사용 용도"></textarea>
+                        <label class="form-label" for="textArea12">설문 테스트 2</label>
+                        <textarea class="form-control" id="textArea12" rows="5" data-input-type="text" data-input-id="2" data-input-question="설문 테스트 2"></textarea>
                       </div>
 
                       <div class="form-group mb-3">
-                        <label class="form-label" for="textArea22">개선 사항</label>
-                        <textarea class="form-control" id="textArea22" rows="5" data-input-type="text" data-input-id="3" data-input-question="개선 사항"></textarea>
+                        <label class="form-label" for="textArea22">설문 테스트 3</label>
+                        <textarea class="form-control" id="textArea22" rows="5" data-input-type="text" data-input-id="3" data-input-question="설문 테스트 3"></textarea>
                       </div>
                     </div>
                   </div>

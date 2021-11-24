@@ -1,4 +1,12 @@
 /* SURVEY STYLE */
+html {
+  overflow-y: scroll;
+}
+
+body {
+  font-family: "Roboto", "NanumSquare",sans-serif;
+}
+
 .bg-gray-dark {
   background-color: var(--mdb-dark);
 }
@@ -9,15 +17,21 @@
   overflow: hidden;
 }
 
-.logo .hp-link {
+.logo {
   margin: 0 auto;
   display: block;
+  width: 100%;
   max-width: 210px;
   height: 117px;
   background: url("/assets/images/header_logo.png") 0 0 no-repeat;
   background-size: 100%;
   font-size: 0;
   line-height: 0;
+}
+.logo .hp-link {
+  display:block;
+  width: 100%;
+  height: 100%;
 }
 
 .survey-container {
