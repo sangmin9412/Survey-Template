@@ -23,7 +23,7 @@ body {
   width: 100%;
   max-width: 210px;
   height: 117px;
-  background: url("/assets/images/header_logo.png") 0 0 no-repeat;
+  background: url("../images/header_logo.png") 0 0 no-repeat;
   background-size: 100%;
   font-size: 0;
   line-height: 0;
