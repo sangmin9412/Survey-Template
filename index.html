@@ -13,6 +13,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="assets/css/styles.css">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+  <script src="assets/js/surveyData.js"></script>
   <script src="assets/js/app.js"></script>
 </head>
 <body>
@@ -31,284 +32,7 @@
               </div>
 
               <div class="survey-card-area">
-                <div class="card">
-                  <div class="card-header bg-gray-dark ">
-                    <h5 class="card-title text-white mt-2">STEP.01</h5>
-                  </div>
-                  <div class="modal-body">
-                    <div class="text-center">
-                      <!-- <i class="far fa-file-alt fa-4x mb-3 text-secondary "></i> -->
-                      <p>
-                        <strong>STEP 01 Title</strong>
-                      </p>
-                      <p>
-                        Step 01 
-                        <strong>Description</strong>
-                      </p>
-                    </div>
-              
-                    <hr />
-              
-                    <div class="px-4">
-                      <div class="form-group mb-3">
-                        <label class="form-label" for="custom-validation-input-1">사번</label>
-                        <input type="text" id="custom-validation-input-1" class="form-control" readonly data-input-type="text" data-input-id="1" data-input-question="사번" value="TH201213">
-                      </div>
-
-                      <div class="form-group mb-3">
-                        <label class="form-label" for="custom-validation-input-2">소속</label>
-                        <input type="text" id="custom-validation-input-2" class="form-control" readonly data-input-type="text" data-input-id="2" data-input-question="소속" value="더에스엠씨그룹">
-                      </div>
-
-                      <div class="form-group mb-3">
-                        <label class="form-label" for="custom-validation-input-3">부서 / 팀</label>
-                        <input type="text" id="custom-validation-input-3" class="form-control" readonly data-input-type="text" data-input-id="3" data-input-question="부서 / 팀" value="R&D">
-                      </div>
-                      
-                      <div class="form-group mb-3">
-                        <label class="form-label">설문 테스트 4 (라디오)</label>
-                        <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="radio"
-                            name="flexRadioDefault"
-                            value="라디오박스 테스트 1"
-                            id="flexRadioDefault1"
-                            data-input-type="radio" 
-                            data-input-id="4" 
-                            data-input-question="설문 테스트 4"
-                          />
-                          <label class="form-check-label" for="flexRadioDefault1"> 라디오박스 테스트 1 </label>
-                        </div>
-                        <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="radio"
-                            name="flexRadioDefault"
-                            id="flexRadioDefault2"
-                            value="라디오박스 테스트 2"
-                            data-input-type="radio" 
-                            data-input-id="4" 
-                            data-input-question="설문 테스트 4"
-                          />
-                          <label class="form-check-label" for="flexRadioDefault2"> 라디오박스 테스트 2 </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-footer text-end">
-                    <div class="d-grid">
-                      <button type="button" class="btn btn-dark" data-input-type="submit">다음</button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <div class="card-header bg-gray-dark ">
-                    <h5 class="card-title text-white mt-2">STEP.02</h5>
-                  </div>
-                  <div class="modal-body">
-                    <div class="text-center">
-                      <!-- <i class="far fa-file-alt fa-4x mb-3 text-secondary "></i> -->
-                      <p>
-                        <strong>STEP 02 Title</strong>
-                      </p>
-                      <p>
-                        Step 02 
-                        <strong>Description</strong>
-                      </p>
-                    </div>
-              
-                    <hr />
-              
-                    <div class="px-4">
-                      <!-- <p class="text-center"><strong>Your rating:</strong></p> -->
-
-                      <div class="form-gorup mb-3">
-                        <label class="form-label">설문 테스트 1 (체크박스)</label>
-                        <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            value="체크박스 테스트 1"
-                            id="flexCheckChecked3"
-                            data-input-type="checkbox" 
-                            data-input-id="1" 
-                            data-input-question="설문 테스트 1"
-                          />
-                          <label class="form-check-label" for="flexCheckChecked3">
-                            체크박스 테스트 1
-                          </label>
-                        </div>
-
-                        <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            value="체크박스 테스트 2"
-                            id="flexCheckChecked4"
-                            data-input-type="checkbox" 
-                            data-input-id="1" 
-                            data-input-question="설문 테스트 1"
-                          />
-                          <label class="form-check-label" for="flexCheckChecked4">
-                            체크박스 테스트 2
-                          </label>
-                        </div>
-                      </div>
-
-                      <div class="form-group mb-3">
-                        <label class="form-label" for="custom-validation-input-6">설문 테스트 2 (이메일)</label>
-                        <input type="text" id="custom-validation-input-6" class="form-control" required="" data-input-id="2" data-input-question="설문 테스트 2" data-input-type="email" placeholder="email">
-                      </div>
-              
-                      <!-- <p class="text-center"><strong>What could we improve?</strong></p> -->
-              
-                      <!-- Message input -->
-                      <div class="form-group mb-3">
-                        <label class="form-label" for="textArea1">설문 테스트 3 (10자 이상)</label>
-                        <textarea class="form-control" id="textArea1" rows="5" data-input-type="text" data-input-id="3" data-input-question="설문 테스트 3" data-input-maxlength="10" placeholder="10자 이상 입력"></textarea>
-                      </div>
-
-                      <div class="form-group mb-3">
-                        <label class="form-label" for="textArea2">설문 테스트 4 (30자 이상)</label>
-                        <textarea class="form-control" id="textArea2" rows="5" data-input-type="text" data-input-id="4" data-input-question="설문 테스트 4" data-input-maxlength="30" placeholder="30자 이상 입력"></textarea>
-                      </div>
-
-                      <div class="form-gorup mb-3">
-                        <label class="form-label">설문 테스트 5 (체크박스)</label>
-                        <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            value="체크박스 테스트 3"
-                            id="flexCheckChecked1"
-                            data-input-type="checkbox" 
-                            data-input-id="5" 
-                            data-input-question="설문 테스트 5"
-                          />
-                          <label class="form-check-label" for="flexCheckChecked1">
-                            체크박스 테스트 3
-                          </label>
-                        </div>
-
-                        <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            value="체크박스 테스트 4"
-                            id="flexCheckChecked2"
-                            data-input-type="checkbox" 
-                            data-input-id="5" 
-                            data-input-question="설문 테스트 5"
-                          />
-                          <label class="form-check-label" for="flexCheckChecked2">
-                            체크박스 테스트 4
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-footer text-end">
-                    <div class="d-grid">
-                      <button type="button" class="btn btn-dark" data-input-type="submit">다음</button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <div class="card-header bg-gray-dark ">
-                    <h5 class="card-title text-white mt-2">STEP.03</h5>
-                  </div>
-                  <div class="modal-body">
-                    <div class="text-center">
-                      <!-- <i class="far fa-file-alt fa-4x mb-3 text-secondary "></i> -->
-                      <p>
-                        <strong>STEP 03 Title</strong>
-                      </p>
-                      <p>
-                        Step 03 
-                        <strong>Description</strong>
-                      </p>
-                    </div>
-              
-                    <hr />
-              
-                    <div class="px-4">
-                      <!-- <p class="text-center"><strong>Your rating:</strong></p> -->
-
-                      <div class="form-group mb-3">
-                        <label class="form-label" for="custom-validation-input-61">설문 테스트 1</label>
-                        <input type="text" id="custom-validation-input-61" class="form-control" required="" data-input-id="1" data-input-question="설문 테스트 1" data-input-type="text">
-                      </div>
-              
-                      <!-- <p class="text-center"><strong>What could we improve?</strong></p> -->
-              
-                      <!-- Message input -->
-                      <div class="form-group mb-3">
-                        <label class="form-label" for="textArea11">설문 테스트 2</label>
-                        <textarea class="form-control" id="textArea11" rows="5" data-input-type="text" data-input-id="2" data-input-question="설문 테스트 2"></textarea>
-                      </div>
-
-                      <div class="form-group mb-3">
-                        <label class="form-label" for="textArea21">설문 테스트 3</label>
-                        <textarea class="form-control" id="textArea21" rows="5" data-input-type="text" data-input-id="3" data-input-question="설문 테스트 3"></textarea>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-footer text-end">
-                    <div class="d-grid">
-                      <button type="button" class="btn btn-dark" data-input-type="submit">다음</button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <div class="card-header bg-gray-dark ">
-                    <h5 class="card-title text-white mt-2">STEP.04</h5>
-                  </div>
-                  <div class="modal-body">
-                    <div class="text-center">
-                      <!-- <i class="far fa-file-alt fa-4x mb-3 text-secondary "></i> -->
-                      <p>
-                        <strong>STEP 04 Title</strong>
-                      </p>
-                      <p>
-                        Step 04 
-                        <strong>Description</strong>
-                      </p>
-                    </div>
-              
-                    <hr />
-              
-                    <div class="px-4">
-                      <!-- <p class="text-center"><strong>Your rating:</strong></p> -->
-
-                      <div class="form-group mb-3">
-                        <label class="form-label" for="custom-validation-input-62">설문 테스트 1</label>
-                        <input type="text" id="custom-validation-input-62" class="form-control" required="" data-input-id="1" data-input-question="설문 테스트 1" data-input-type="text">
-                      </div>
-              
-                      <!-- <p class="text-center"><strong>What could we improve?</strong></p> -->
-              
-                      <!-- Message input -->
-                      <div class="form-group mb-3">
-                        <label class="form-label" for="textArea12">설문 테스트 2</label>
-                        <textarea class="form-control" id="textArea12" rows="5" data-input-type="text" data-input-id="2" data-input-question="설문 테스트 2"></textarea>
-                      </div>
-
-                      <div class="form-group mb-3">
-                        <label class="form-label" for="textArea22">설문 테스트 3</label>
-                        <textarea class="form-control" id="textArea22" rows="5" data-input-type="text" data-input-id="3" data-input-question="설문 테스트 3"></textarea>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-footer text-end">
-                    <div class="d-grid">
-                      <button type="button" class="btn btn-dark" data-input-type="submit">보내기</button>
-                    </div>
-                  </div>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -324,5 +48,21 @@
       </main>
     </div>
   </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const PMS_SURVEY = new SURVEY({
+        parentId: "survey_1",
+        dataType: "data-input-type",
+        // step: 4,
+        buttonClass: {
+          prev: '.survey_1-prev',
+          next: '.survey_1-next',
+        }
+      });
+      PMS_SURVEY.setStep(surveyData);
+      PMS_SURVEY.init();
+    });
+  </script>
 </body>
 </html>
